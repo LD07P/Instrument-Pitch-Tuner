@@ -1,0 +1,29 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+
+# Build outputs
+*.o
+*.hex
+*.elf
+*.bin
+*.map
+*.d
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+.build/
+build/
+
+# System
+.DS_Store
+*~
+*.tmp
+*.bak
+*.swp
+*.log
