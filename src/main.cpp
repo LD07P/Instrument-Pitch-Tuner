@@ -1,4 +1,4 @@
-//Instrument Pitch Tuner - Lucas Pop - 07/27/2026
+//Instrument Pitch Tuner - Lucas Pop - 08/06/2026
 //Analyses sounds and displays notes through fast fourier transformations of microphone inputs
 
 //Include libraries for frequency transformations (FFT)
@@ -17,9 +17,8 @@ const int requiredConsistentReads = 5; // Adjust for more stricter note consiste
 const float freqTolerance = 5.0; // Allowed Hz difference to be considered the same note
 const float noiseAmplitudeThreshold = 20.0; // Adjust based on your mic's noise level
 
-//Define the sampling amount for FFT analysis
-const uint16_t samples = 128; //This value must be a power of 2
-
+//Define the sampling amount for FFT analysis (must be a power of 2)
+const uint16_t samples = 128;
 //Create arrays to hold frequency components for FFT analysis
 float vReal[samples];
 float vImag[samples];
@@ -41,7 +40,7 @@ void loop() {
   // Collect 128 samples of input audio
   float sumSquares = 0;
   for (int i = 0; i < samples; i++) {
-    float val = analogRead(micPin) - 512;  // Read the microphone input with an offset of 1.25 DC voltage bias
+    float val = analogRead(micPin) - 256;  // Read the microphone input with an offset of 1.25 DC voltage bias
     vReal[i] = val;
     vImag[i] = 0.0;
     sumSquares += (val * val);
