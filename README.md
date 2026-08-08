@@ -52,11 +52,11 @@ Eb4 +2
 ## Tuning knobs
 
 In `src/main.cpp` you can adjust:
-
-- `rfreq` — A4 reference (default `440.0`)
-- `noiseAmplitudeThreshold` — RMS gate for silence
-- `freqTolerance` / `requiredConsistentReads` — stability before printing
-- `micPin` — analog input (default `A0`)
+- `samples`: Number of FFT samples (must be power of 2, scales with larger microcontrollers, default: 128)
+- `rfreq`: A4 reference (default `440.0`)
+- `noiseAmplitudeThreshold`: RMS gate for silence
+- `freqTolerance` / `requiredConsistentReads`: stability before printing
+- `micPin`: analog input (default `A0`)
 
 ## License
 
