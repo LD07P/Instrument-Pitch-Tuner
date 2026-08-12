@@ -35,6 +35,8 @@ cd Instrument-Pitch-Tuner
 pio run --target upload
 ```
 
+You can also build and upload from the PlatformIO sidebar or bottom bar in VS Code (or Cursor) instead of the CLI.
+
 Open the Serial Monitor at **9600** baud, play or sing into the mic, and you should see lines like:
 
 ```
