@@ -51,7 +51,7 @@ Eb4 +2
 2. Open `src/main.cpp` (or copy it into a `.ino` sketch)
 3. Select Arduino Uno and your port, then Upload
 
-## Tuning knobs
+## Configuration
 
 In `src/main.cpp` you can adjust:
 - `samples`: Number of FFT samples (must be power of 2, scales with larger microcontrollers, default: 128)
