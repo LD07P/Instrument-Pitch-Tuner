@@ -4,6 +4,8 @@ Arduino sketch that reads an analog microphone, runs an FFT, and prints the dete
 
 Extracted from the [Trumpet Pitch Tuner](https://github.com/LD07P/Trumpet-Pitch-Tuner) project as a standalone note-reading firmware.
 
+![Built Instrument Pitch Tuner](media/Instrument-Pitch-Tuner.jpg)
+
 ## Features
 
 - Real-time pitch detection via FFT (`arduinoFFT`)
