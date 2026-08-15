@@ -57,6 +57,7 @@ Eb4 +2
 
 In `src/main.cpp` you can adjust:
 - `samples`: Number of FFT samples (must be power of 2, scales with larger microcontrollers, default: 128)
+- `FFT.windowing`: FFT window (`FFTWindow::Hamming` or `FFTWindow::Hann`, default: Hamming)
 - `rfreq`: A4 reference (default `440.0`)
 - `noiseAmplitudeThreshold`: RMS gate for silence
 - `freqTolerance` / `requiredConsistentReads`: Stability before printing
