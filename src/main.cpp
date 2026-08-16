@@ -62,13 +62,11 @@ void loop() {
   //Construct FFT variables to use in FFT functions
   ArduinoFFT<float> FFT(vReal, vImag, samples, realFs);
 
-  //Compute samples into components of note frequency
+  //Compute samples into components of most common note frequency
   FFT.dcRemoval();
   FFT.windowing(FFTWindow::Hamming, FFTDirection::Forward);
   FFT.compute(FFTDirection::Forward);
   FFT.complexToMagnitude();
-
-  //Compute most common frequency
   float x = FFT.majorPeak();
 
   // Check if the frequency is consistent with previous readings
