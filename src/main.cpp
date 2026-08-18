@@ -1,4 +1,4 @@
-//Instrument Pitch Tuner - Lucas Pop - 08/06/2026
+//Instrument Pitch Tuner - Lucas Pop - 08/18/2026
 //Analyses sounds and displays notes through fast fourier transformations of microphone inputs
 
 //Include libraries for frequency transformations (FFT)
@@ -37,7 +37,7 @@ void loop() {
   //Define time for obtaining sampling rate  
   unsigned long t0 = micros();
 
-  // Collect 128 samples of input audio
+  // Collect samples of microphone input audio
   float sumSquares = 0;
   for (int i = 0; i < samples; i++) {
     float val = analogRead(micPin) - 256;  // Read the microphone input with an offset of 1.25 DC voltage bias
