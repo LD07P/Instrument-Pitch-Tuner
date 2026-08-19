@@ -22,7 +22,7 @@ Extracted from the [Trumpet Pitch Tuner](https://github.com/LD07P/Trumpet-Pitch-
 | Microphone GND | GND |
 
 - **Board**: Arduino Uno (or compatible)
-- **Mic**: Analog microphone module with ~1.25 V DC bias (centered around mid-scale for `analogRead`)
+- **Mic**: Analog microphone module with a built-in amplifier and ~1.25 V DC bias (centered around mid-scale for `analogRead`). This project used a [MAX9814](https://www.adafruit.com/product/1713) electret microphone amplifier module. The microphone **must** include an amplifier to work with this sketch; otherwise a custom amp must be built and integrated.
 
 ## Software
 
