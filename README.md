@@ -56,12 +56,12 @@ Eb4 +2
 ## Configuration
 
 In `src/main.cpp` you can adjust:
+- `rfreq`: Reference frequency for A4 (default: 440.0 Hz)
+- `requiredConsistentReads` Required note consistency to display
+- `freqTolerance` Allowed Hz difference to be considered the same note
+- `noiseAmplitudeThreshold` Determines nessecary amplitude to read
 - `samples`: Number of FFT samples (must be power of 2, scales with larger microcontrollers, default: 128)
 - `FFT.windowing`: FFT window (`FFTWindow::Hamming` or `FFTWindow::Hann`, default: Hamming)
-- `rfreq`: A4 reference (default `440.0`)
-- `noiseAmplitudeThreshold`: RMS gate for silence
-- `freqTolerance` / `requiredConsistentReads`: Stability before printing
-- `micPin`: Analog input (default `A0`)
 - `delay()`: Serial monitor update rate in milliseconds (default: 300ms)
 
 ## License
