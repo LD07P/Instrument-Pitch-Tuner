@@ -51,7 +51,7 @@ Eb4 +2
 
 1. Install **arduinoFFT** by kosme (Library Manager, v2.0.4+)
 2. Copy `src/main.cpp` into a `.ino` sketch
-3. Select Arduino Uno and your port, then Upload
+3. Select Arduino board and your port, then Upload
 
 ## Configuration
 
