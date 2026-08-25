@@ -46,10 +46,8 @@ void loop() {
     sumSquares += (val * val);
   }
   
-  // Calculate root mean square (RMS) to determine audio amplitude
+  // Calculate root mean square (RMS) to determine audio amplitude and compare to minimum amplitude
   float rms = sqrt(sumSquares / samples);
-
-  // If the amplitude is too low, it's just background noise
   if (rms < noiseAmplitudeThreshold) {
     consistentCount = 0;
     return;
