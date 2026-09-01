@@ -19,6 +19,7 @@ const float noiseAmplitudeThreshold = 20.0; // Adjust based on your mic's noise 
 
 //Define the sampling amount for FFT analysis (must be a power of 2)
 const uint16_t samples = 128;
+
 //Create arrays to hold frequency components for FFT analysis
 float vReal[samples];
 float vImag[samples];
@@ -94,10 +95,8 @@ void loop() {
     noteImpact = -1; //Note is flatter
   }
 
-  //Convert note to integer for octave calculations
-  int note = int(noteFloat);
-
   //Calculate octave value using the specific reference note A4
+  int note = int(noteFloat);
   if (note/3 >= 1) {
     noteOctave = (4 + 1 + ((note - 3) / 12)); /*Any note 3 semitones higher or more is at least one octave above
     every twelve semitones is another octave more*/

@@ -60,7 +60,7 @@ In `src/main.cpp` you can adjust:
 - `requiredConsistentReads` Required note consistency to display
 - `freqTolerance` Allowed Hz difference to be considered the same note
 - `noiseAmplitudeThreshold` Determines nessecary amplitude to read
-- `samples`: Number of FFT samples (must be power of 2, scales with larger microcontrollers, default: 128)
+- `samples`: Number of FFT samples (must be power of 2, scales with more SRAM, default: 128)
 - `FFT.windowing`: FFT window (`FFTWindow::Hamming` or `FFTWindow::Hann`, default: Hamming)
 - `delay()`: Serial monitor update rate in milliseconds (default: 300ms)
 
