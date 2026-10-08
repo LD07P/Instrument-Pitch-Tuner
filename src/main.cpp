@@ -1,4 +1,4 @@
-//Instrument Pitch Tuner - Lucas Pop - 08/18/2026
+//Instrument Pitch Tuner - Lucas Pop - 10/08/2026
 //Analyses sounds and displays notes through fast fourier transformations of microphone inputs
 
 //Include libraries for frequency transformations (FFT)
